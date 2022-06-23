@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task</title>
+    <style>
+      table {
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid #dddddd;
+        border-collapse: collapse;
+      }
+      table th {
+        font-weight: bold;
+        padding: 5px;
+        background: #efefef;
+        border: 1px solid #dddddd;
+      }
+      table td {
+        border: 1px solid #dddddd;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Sensor_type</th>
+        <th>num</th>
+        <th>name</th>
+        <th>temperature</th>
+        <th>humidity</th>
+        {% for elem in data %}
+      </tr>
+
+      <tr>
+        <td>{{ elem.sensor_type }}</td>
+        <td>{{ elem.num }}</td>
+        <td>{{ elem.name }}</td>
+        <td>{{ elem.temperature }}</td>
+        <td>{{ elem.humidity }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
