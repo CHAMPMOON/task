@@ -7,7 +7,7 @@ Clone the repository:
 
 ```sh
 $ git clone https://github.com/CHAMPMOON/task.git
-$ cd task/
+$ cd json-loader/
 ```
 
 Create a virtual environment:
